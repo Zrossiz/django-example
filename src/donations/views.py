@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from src.mailings.mailchimp_services import add_email_with_tag
 
-# Create your views here.
+
+def webhook(req):
+    add_email_with_tag(email=req.POST.get('email'),
+                       audience_name='DONATES',
+                       tag='DONATES')

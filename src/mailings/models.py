@@ -11,6 +11,7 @@ class CommonMailingList(models.Model):
 
 
 class CaseMailingList(models.Model):
+    objects = None
     email = models.EmailField('Email подписчика')
     case = models.ForeignKey(to='cases.Case', verbose_name='Дело', on_delete=models.CASCADE)
 
