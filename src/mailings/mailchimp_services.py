@@ -11,7 +11,6 @@ def add_email_with_tag(audience_name: str, email: str, tag: str) -> None:
                        tag=tag)
 
 
-
 def _get_mailchimp_client() -> MailChimp:
     return MailChimp(mc_api=settings.MAILCHIMP_API_KEY, mc_user=settings.MAILCHIMP_USERNAME)
 

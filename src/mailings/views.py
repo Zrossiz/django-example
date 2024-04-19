@@ -1,5 +1,10 @@
 from django.http import JsonResponse
 from .services import add_email_to_common_mailchimp_list, add_email_to_case_mailchimp_list
+from django.conf import settings
+
+
+def test(req):
+    return JsonResponse({'success': settings.MY_API_KEY})
 
 
 def add_to_common_list_view(req):

@@ -1,6 +1,6 @@
-from src.mailings.mailchimp_services import add_email_with_tag
-from src.mailings.models import CommonMailingList, CaseMailingList
-from src.cases.models import Case
+from mailings.mailchimp_services import add_email_with_tag
+from mailings.models import CommonMailingList, CaseMailingList
+from cases.models import Case
 from typing import Union
 
 
