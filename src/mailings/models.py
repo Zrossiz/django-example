@@ -3,6 +3,7 @@ from django.db import models
 
 # Create your models here.
 class CommonMailingList(models.Model):
+    objects = None
     email = models.EmailField('Email подписчика')
 
     class Meta:
